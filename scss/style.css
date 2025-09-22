@@ -1,0 +1,273 @@
+@charset "UTF-8";
+/* ========================
+   VARIÁVEIS GLOBAIS
+======================== */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+/* Cores principais */
+/* Tipografia */
+/* Tamanhos de fonte */
+/* Espaçamentos */
+/* Bordas e raio */
+/* Sombra leve */
+/* ========================
+   RESET / NORMALIZE
+======================== */
+/* Box sizing global */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #8B5E3C;
+  border-radius: 6px;
+  border: 3px solid #ffffff;
+}
+
+/* Remove bullet points e estilos de listas */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Remove sublinhado de links */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Imagens responsivas */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Tabelas básicas */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Form inputs */
+input,
+textarea,
+button,
+select {
+  font: inherit;
+  outline: none;
+  border: none;
+  background: none;
+  resize: none;
+}
+
+/* Reset de heading e parágrafos */
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  font-weight: normal;
+}
+
+/* Body básico */
+body {
+  line-height: 1.6;
+  font-family: "Inter", sans-serif; /* podes mudar para tua fonte */
+  color: #333;
+  background-color: #fff;
+  scroll-behavior: smooth;
+}
+
+/* Links com transição suave */
+a {
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Botões cursor pointer */
+button {
+  cursor: pointer;
+}
+
+/* Remove outline para navegadores, mas podes adicionar foco personalizado depois */
+:focus {
+  outline: none;
+}
+
+/* ========================
+   TYPOGRAFIA GLOBAL
+======================== */
+/* Corpo do site */
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #3a3a3a;
+  background-color: #ffffff;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Poppins", sans-serif;
+  color: #3a3a3a;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+/* Parágrafos e texto */
+p, span, small, label {
+  font-family: "Poppins", sans-serif;
+  color: #3a3a3a;
+}
+
+/* Links */
+a {
+  color: #8B5E3C;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+a:hover {
+  color: #D9C3A0;
+}
+
+/* Lists */
+ul, ol {
+  font-family: "Poppins", sans-serif;
+  color: #3a3a3a;
+  margin-left: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* Strong / Bold */
+strong, b {
+  font-weight: 600;
+}
+
+/* Italic */
+em, i {
+  font-style: italic;
+}
+
+/* Small text */
+small {
+  font-size: 0.875rem;
+  color: #A78C6C;
+}
+
+/* Blockquotes */
+blockquote {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.25rem;
+  color: #A78C6C;
+  margin: 2rem 0;
+  padding-left: 1rem;
+  border-left: 4px solid #8B5E3C;
+}
+
+.navbar {
+  background-color: #ffffff;
+  padding: 10px 20px !important;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.navbar-brand img {
+  max-height: 60px;
+  width: auto;
+  display: block;
+}
+.navbar-brand span {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2rem;
+  color: #8B5E3C;
+}
+
+.nav-link {
+  color: #3a3a3a !important;
+}
+.nav-link:hover {
+  color: #8B5E3C !important;
+}
+
+.home-png {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-png img {
+  width: 400px;
+  border-radius: 100%;
+  transition: all 0.5s ease;
+}
+
+.section-title {
+  padding: 50px;
+  margin-bottom: 50px;
+}
+
+.title-with-line {
+  position: relative;
+  display: inline-block;
+  font-weight: bold;
+  color: white;
+}
+
+.title-with-line::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  height: 2px;
+  width: 50px;
+  background-color: #8B5E3C;
+  border-radius: 5px;
+}
+
+.timeline-date {
+  color: #8B5E3C;
+}
+
+.home-section {
+  background-color: #8B5E3C;
+  width: 100vw !important; /* largura total da tela */
+  height: 100vh !important;
+}
+
+/*# sourceMappingURL=style.css.map */

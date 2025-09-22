@@ -1,0 +1,74 @@
+@use '../base/variables' as var;
+
+.services {
+  background-color: var.$color-muted !important;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: #333;
+}
+
+
+.service {
+  border-radius: 12px;
+  background-color: var.$color-light;
+  padding: 2rem;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  border: 1px solid #f0f0f0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.service:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+
+.service i {
+  color: var.$color-primary;
+  transition: all 0.3s ease;
+}
+
+.service:hover i {
+  color: var.$color-primary;
+  transform: scale(1.1);
+}
+
+
+.service h3 {
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .service {
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+}
+
+.service::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var.$color-primary, var.$color-primary);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.service:hover::before {
+  transform: scaleX(1);
+}

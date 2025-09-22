@@ -1,0 +1,108 @@
+@use 'variables' as var;
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+/* ========================
+   TYPOGRAFIA GLOBAL
+======================== */
+
+/* Corpo do site */
+body {
+  font-family: var.$font-primary;
+  font-size: var.$font-size-base;
+  line-height: 1.6;
+  color: var.$color-dark;
+  background-color: var.$color-light;
+}
+
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var.$font-primary;
+  color: var.$color-dark;
+  margin-bottom: var.$spacing-md;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: var.$font-size-h1;
+}
+
+h2 {
+  font-size: var.$font-size-h2;
+}
+
+h3 {
+  font-size: var.$font-size-h3;
+}
+
+h4 {
+  font-size: var.$font-size-h4;
+}
+
+h5 {
+  font-size: var.$font-size-h5;
+}
+
+h6 {
+  font-size: var.$font-size-h6;
+}
+
+/* Parágrafos e texto */
+p,
+span,
+small,
+label {
+  font-family: var.$font-primary;
+  color: var.$color-dark;
+
+}
+
+/* Links */
+a {
+  color: var.$color-primary;
+  transition: color 0.3s ease, transform 0.3s ease;
+
+  &:hover {
+    color: var.$color-secondary;
+
+  }
+}
+
+/* Lists */
+ul,
+ol {
+  font-family: var.$font-primary;
+  color: var.$color-dark;
+  margin-left: var.$spacing-lg;
+  margin-bottom: var.$spacing-md;
+}
+
+/* Strong / Bold */
+strong,
+b {
+  font-weight: 600;
+}
+
+/* Italic */
+
+
+/* Small text */
+small {
+  font-size: 0.875rem;
+  color: var.$color-muted;
+}
+
+/* Blockquotes */
+blockquote {
+  font-family: var.$font-primary;
+  font-size: 1.25rem;
+  color: var.$color-muted;
+  margin: var.$spacing-lg 0;
+  padding-left: var.$spacing-md;
+  border-left: 4px solid var.$color-primary;
+}

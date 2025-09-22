@@ -1,0 +1,15 @@
+// style.scss
+
+// Variáveis e reset
+@use "base/variables";
+@use "base/reset";
+@use "base/typography";
+// Components
+@use "components/site-navbar";
+
+
+// Páginas
+@use "pages/home";
+@use "pages/services";
+@use "pages/about";
+@use "pages/portfolio";

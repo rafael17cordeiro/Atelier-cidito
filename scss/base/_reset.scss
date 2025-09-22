@@ -1,0 +1,120 @@
+/* ========================
+   RESET / NORMALIZE
+======================== */
+@use '../base/variables' as var;
+
+
+
+
+/* Box sizing global */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+::selection {
+  background-color: var.$color-secondary;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: var.$color-light;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var.$color-primary;
+  border-radius: 6px;
+  border: 3px solid var.$color-light;
+}
+
+/* Remove bullet points e estilos de listas */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Remove sublinhado de links */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Imagens responsivas */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Tabelas básicas */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Form inputs */
+input,
+textarea,
+button,
+select {
+  font: inherit;
+  outline: none;
+  border: none;
+  background: none;
+  resize: none;
+}
+
+/* Reset de heading e parágrafos */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  font-weight: normal;
+}
+
+/* Body básico */
+body {
+  line-height: 1.6;
+  font-family: 'Inter', sans-serif;
+  /* podes mudar para tua fonte */
+  color: #333;
+  background-color: #fff;
+  scroll-behavior: smooth;
+}
+
+/* Links com transição suave */
+a {
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Botões cursor pointer */
+button {
+  cursor: pointer;
+}
+
+/* Remove outline para navegadores, mas podes adicionar foco personalizado depois */
+:focus {
+  outline: none;
+}
+
+
+.highlight {
+  color: var.$color-primary;
+  font-weight: 700;
+}

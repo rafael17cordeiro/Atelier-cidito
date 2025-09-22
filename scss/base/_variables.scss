@@ -1,0 +1,39 @@
+/* ========================
+   VARIÁVEIS GLOBAIS
+======================== */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+
+/* Cores principais */
+$color-primary: #8B5E3C; // castanho médio (para destaques, botões)
+$color-secondary: #D9C3A0; // castanho claro (para hover, subtítulos)
+$color-light: #ffffff; // fundo principal
+$color-dark: #3a3a3a; // texto escuro
+$color-muted: rgb(253, 247, 241); // texto secundário / labels
+
+/* Tipografia */
+$font-primary: "Poppins", sans-serif;
+; // corpo do site
+
+
+/* Tamanhos de fonte */
+$font-size-base: 16px;
+$font-size-h1: 2.5rem;
+$font-size-h2: 2rem;
+$font-size-h3: 1.75rem;
+$font-size-h4: 1.5rem;
+$font-size-h5: 1.25rem;
+$font-size-h6: 1rem;
+
+/* Espaçamentos */
+$spacing-xs: 0.25rem;
+$spacing-sm: 0.5rem;
+$spacing-md: 1rem;
+$spacing-lg: 2rem;
+$spacing-xl: 3rem;
+
+/* Bordas e raio */
+$border-radius: 8px;
+
+/* Sombra leve */
+$box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);

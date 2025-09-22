@@ -1,0 +1,14 @@
+@use '../base/variables' as var;
+
+
+.home-png {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-png img {
+  width: 400px;
+  border-radius: 100%;
+  transition: all 0.5s ease;
+}

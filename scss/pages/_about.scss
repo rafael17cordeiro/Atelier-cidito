@@ -1,0 +1,24 @@
+@use '../base/variables' as var;
+
+
+
+
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.about img {
+  width: 600px;
+  transition: all 0.5s ease;
+  box-shadow: var.$box-shadow;
+}
+
+.about img:hover {
+  transform: scale(1.05);
+
+}

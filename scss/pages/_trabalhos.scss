@@ -1,0 +1,14 @@
+@use '../base/variables' as var;
+
+.trabalhos {
+    background-color: var.$color-muted !important;
+}
+
+.trabalhos .carousel-inner img {
+    height: 400px;
+    /* altura fixa para todas as imagens */
+    object-fit: cover;
+    /* corta e ajusta a imagem para preencher */
+    border-radius: 15px;
+    /* cantos arredondados (opcional) */
+}

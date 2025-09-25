@@ -97,8 +97,6 @@ p {
 /* Body básico */
 body {
   line-height: 1.6;
-  font-family: "Inter", sans-serif;
-  /* podes mudar para tua fonte */
   color: #333;
   background-color: #fff;
   scroll-behavior: smooth;
@@ -252,6 +250,15 @@ blockquote {
   color: #8B5E3C !important;
 }
 
+footer {
+  background-color: #8B5E3C;
+  /* cor do texto */
+}
+
+footer .text-muted {
+  color: rgb(253, 247, 241) !important;
+}
+
 .home-png {
   display: flex;
   justify-content: center;
@@ -273,7 +280,6 @@ blockquote {
   font-weight: 700;
   margin-bottom: 2rem;
   text-align: center;
-  color: #333;
 }
 
 .service {
@@ -364,7 +370,19 @@ blockquote {
   width: 100%;
   height: 50vh;
   object-fit: cover;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15) !important;
+}
+
+.trabalhos {
+  background-color: rgb(253, 247, 241) !important;
+}
+
+.trabalhos .carousel-inner img {
+  height: 400px;
+  /* altura fixa para todas as imagens */
+  object-fit: cover;
+  /* corta e ajusta a imagem para preencher */
+  border-radius: 15px;
+  /* cantos arredondados (opcional) */
 }
 
 /*# sourceMappingURL=style.css.map */

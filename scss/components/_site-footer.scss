@@ -1,0 +1,10 @@
+@use '../base/variables' as var;
+
+footer {
+    background-color: var.$color-primary;
+    /* cor do texto */
+}
+
+footer .text-muted {
+    color: var.$color-muted !important;
+}

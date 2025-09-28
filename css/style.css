@@ -259,6 +259,18 @@ footer .text-muted {
   color: rgb(253, 247, 241) !important;
 }
 
+.btn-form {
+  border-radius: 20px;
+  padding: 5px 20px 5px 20px;
+  background-color: #8B5E3C !important;
+  color: #ffffff !important;
+}
+
+.btn-form:hover {
+  background-color: #D9C3A0 !important;
+  color: #ffffff !important;
+}
+
 .home-png {
   display: flex;
   justify-content: center;
@@ -377,12 +389,25 @@ footer .text-muted {
 }
 
 .trabalhos .carousel-inner img {
-  height: 400px;
-  /* altura fixa para todas as imagens */
+  height: 500px;
   object-fit: cover;
-  /* corta e ajusta a imagem para preencher */
   border-radius: 15px;
-  /* cantos arredondados (opcional) */
+}
+
+#trabalhosCarousel .carousel-indicators {
+  bottom: -30px;
+}
+
+#trabalhosCarousel .carousel-indicators button {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #ccc;
+  border: none;
+}
+
+#trabalhosCarousel .carousel-indicators .active {
+  background-color: #8B5E3C;
 }
 
 /*# sourceMappingURL=style.css.map */

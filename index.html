@@ -204,7 +204,7 @@
       <!-- Primeira entrada: imagem à esquerda -->
       <div class="row align-items-center py-5" data-aos="fade-up">
         <div class="col-12 col-md-6 mb-4 mb-md-0">
-          <div id="portfolioCarousel1" class="carousel slide" data-bs-ride="carousel">
+          <div id="portfolioCarousel1" class="carousel slide carousel-fade" data-bs-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <img src="images/Nuno Palhinhas/4ª antes.jpg" class="d-block w-100 rounded" alt="Exemplo1">
@@ -212,13 +212,14 @@
               <div class="carousel-item">
                 <img src="images/Nuno Palhinhas/4º depois.jpg" class="d-block w-100 rounded" alt="Exemplo1">
               </div>
-              <div class="carousel-item active">
+              <div class="carousel-item">
                 <img src="images/Miguel Rocha/2ª.jpg" class="d-block w-100 rounded" alt="Exemplo1">
               </div>
               <div class="carousel-item">
                 <img src="images/Miguel Rocha/8ª.jpg" class="d-block w-100 rounded" alt="Exemplo1">
               </div>
             </div>
+
             <button class="carousel-control-prev" type="button" data-bs-target="#portfolioCarousel1"
               data-bs-slide="prev">
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -246,7 +247,7 @@
       <!-- Segunda entrada: imagem à direita -->
       <div class="row align-items-center py-5 flex-row-reverse" data-aos="fade-up">
         <div class="col-12 col-md-6 mb-4 mb-md-0">
-          <div id="portfolioCarousel2" class="carousel slide" data-bs-ride="carousel">
+          <div id="portfolioCarousel2" class="carousel slide carousel-fade" data-bs-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <img src="images/Antonio Alfaia/21ª antes.jpg" class="d-block w-100 rounded" alt="Exemplo2">
@@ -285,7 +286,7 @@
       <!-- Terceira entrada: imagem à esquerda -->
       <div class="row align-items-center py-5" data-aos="fade-up">
         <div class="col-12 col-md-6 mb-4 mb-md-0">
-          <div id="portfolioCarousel3" class="carousel slide" data-bs-ride="carousel">
+          <div id="portfolioCarousel3" class="carousel slide carousel-fade" data-bs-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <img src="images/reparo1.jpg" class="d-block w-100 rounded" alt="Exemplo3">
@@ -338,17 +339,26 @@
   <section class="trabalhos py-5">
     <div class="container" data-aos="fade-up">
       <p class="text-muted text-uppercase text-center">Outros trabalhos</p>
-      <h2 class="title text-center mb-5" data-aos="fade-up">Galeria com vários trabalhos concluídos </h2>
-      <div id="trabalhosCarousel" class="carousel slide mx-auto" data-bs-ride="carousel" style="max-width: 700px;">
+      <h2 class="title text-center mb-5" data-aos="fade-up">Galeria com vários trabalhos concluídos</h2>
+
+      <div id="trabalhosCarousel" class="carousel slide carousel-fade mx-auto" data-bs-ride="carousel"
+        style="max-width: 700px;">
+
         <div class="carousel-inner text-center">
           <div class="carousel-item active">
-            <img src="images/reparo1.jpg" class="d-block w-100 rounded" alt="Trabalho 1">
+            <img src="images/Antonio Alfaia/23ª final.jpg" class="d-block w-100 rounded" alt="Trabalho 1">
           </div>
           <div class="carousel-item">
-            <img src="images/reparo2.jpg" class="d-block w-100 rounded" alt="Trabalho 2">
+            <img src="images/Antonio Alfaia/3ª antes.jpg" class="d-block w-100 rounded" alt="Trabalho 2">
           </div>
           <div class="carousel-item">
-            <img src="images/reparo3.jpg" class="d-block w-100 rounded" alt="Trabalho 3">
+            <img src="images/Antonio Alfaia/4º depois.jpg" class="d-block w-100 rounded" alt="Trabalho 3">
+          </div>
+          <div class="carousel-item">
+            <img src="images/Antonio Alfaia/12ª antes.jpg" class="d-block w-100 rounded" alt="Trabalho 4">
+          </div>
+          <div class="carousel-item">
+            <img src="images/Antonio Alfaia/12ª depois.jpg" class="d-block w-100 rounded" alt="Trabalho 5">
           </div>
         </div>
 
@@ -357,22 +367,40 @@
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Anterior</span>
         </button>
+
         <!-- Controlo direita -->
         <button class="carousel-control-next" type="button" data-bs-target="#trabalhosCarousel" data-bs-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Próximo</span>
-        </button>
+        </button><br><br>
+
+        <!-- Indicadores (bolinhas) por baixo da imagem -->
+        <div class="carousel-indicators mt-3">
+          <button type="button" data-bs-target="#trabalhosCarousel" data-bs-slide-to="0"
+            class="active active-costum"></button>
+          <button type="button" data-bs-target="#trabalhosCarousel" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#trabalhosCarousel" data-bs-slide-to="2"></button>
+          <button type="button" data-bs-target="#trabalhosCarousel" data-bs-slide-to="3"></button>
+          <button type="button" data-bs-target="#trabalhosCarousel" data-bs-slide-to="4"></button>
+        </div>
+
       </div>
     </div>
   </section>
 
+  <style>
+
+  </style>
 
 
 
 
-  <!-- Contact section-->>
+
+
+
+  <!-- Contact section-->
   <section class="contact vh-100 d-flex align-items-center">
-    <div class="container">
+    <div class="container" data-aos="fade-left">
       <div class="row">
 
         <!-- Coluna Esquerda -->
@@ -387,7 +415,7 @@
           <!-- Email -->
           <p>
             <i class="fas fa-envelope me-2 highlight"></i>
-            <a href="mailto:seudemail@gmail.com">atelier do cididto@gmail.com</a>
+            <a href="mailto:seudemail@gmail.com">atelierdocididto@gmail.com</a>
           </p>
 
           <!-- Social Icons -->
@@ -399,28 +427,30 @@
         </div>
 
         <!-- Coluna Direita -->
-        <div class="col-md-6">
-          <form>
+
+        <div class="col-md-6 contact-form">
+          <form action="https://formspree.io/f/xvgwzjkr" method="POST">
             <div class="row">
               <div class="col-md-6 mb-3">
-                <input type="text" class="form-control" placeholder="First Name">
+                <input type="text" class="form-control" name="first name" placeholder="First Name">
               </div>
               <div class="col-md-6 mb-3">
-                <input type="text" class="form-control" placeholder="Last Name">
+                <input type="text" class="form-control" name="last name" placeholder="Last Name">
               </div>
             </div>
             <div class="mb-3">
-              <input type="email" class="form-control" placeholder="Email *" required>
+              <input type="email" class="form-control" name="email" placeholder="Email *" required>
             </div>
             <div class="mb-3">
-              <textarea class="form-control" rows="4" placeholder="Message"></textarea>
+              <textarea class="form-control" name="message" rows="4" placeholder="Message"></textarea>
             </div>
-            <button type="submit" class="btn btn-dark">Send</button>
+            <button type="submit" class="btn btn-form">Send</button>
           </form>
-        </div>
 
+        </div>
       </div>
     </div>
+
   </section>
 
 

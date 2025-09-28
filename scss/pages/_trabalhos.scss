@@ -5,10 +5,27 @@
 }
 
 .trabalhos .carousel-inner img {
-    height: 400px;
-    /* altura fixa para todas as imagens */
+    height: 500px;
     object-fit: cover;
-    /* corta e ajusta a imagem para preencher */
     border-radius: 15px;
-    /* cantos arredondados (opcional) */
+}
+
+
+
+#trabalhosCarousel .carousel-indicators {
+    bottom: -30px;
+}
+
+
+#trabalhosCarousel .carousel-indicators button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #ccc;
+    border: none;
+}
+
+#trabalhosCarousel .carousel-indicators .active {
+    background-color: var.$color-primary;
+
 }

@@ -1,6 +1,7 @@
 @use '../base/variables' as var;
 
 .trabalhos {
+    height: 100vh;
     background-color: var.$color-muted !important;
 }
 

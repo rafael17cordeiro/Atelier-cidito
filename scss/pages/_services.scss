@@ -1,4 +1,4 @@
-@use '../base/variables' as var;
+@use "../base/variables" as var;
 
 .services {
   background-color: var.$color-muted !important;
@@ -9,9 +9,7 @@
   font-weight: 700;
   margin-bottom: 2rem;
   text-align: center;
-
 }
-
 
 .service {
   border-radius: 12px;
@@ -30,7 +28,6 @@
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
 }
 
-
 .service i {
   color: var.$color-primary;
   transition: all 0.3s ease;
@@ -40,7 +37,6 @@
   color: var.$color-primary;
   transform: scale(1.1);
 }
-
 
 .service h3 {
   font-weight: 500;
@@ -58,7 +54,7 @@
 }
 
 .service::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;

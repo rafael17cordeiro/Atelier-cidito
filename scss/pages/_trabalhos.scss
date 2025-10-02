@@ -1,32 +1,50 @@
-@use '../base/variables' as var;
+@use "../base/variables" as var;
 
 .trabalhos {
-    height: 100vh;
-    background-color: var.$color-muted !important;
-}
+  background-color: var.$color-muted !important;
 
-.trabalhos .carousel-inner img {
-    height: 500px;
+  .carousel-inner img {
+    width: 100%;
+    height: 500px; // altura padrão desktop
     object-fit: cover;
     border-radius: 15px;
-}
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 
+    &:hover {
+      transform: scale(1.05);
+      box-shadow: 0 12px 25px rgba(0, 0, 0, 0.35);
+    }
+  }
 
-
-#trabalhosCarousel .carousel-indicators {
+  #trabalhosCarousel .carousel-indicators {
     bottom: -30px;
+
+    button {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background-color: #ccc;
+      border: none;
+
+      &.active {
+        background-color: var.$color-primary;
+      }
+    }
+  }
 }
 
+/* Responsivo */
+@media (max-width: 768px) {
+  .trabalhos .carousel-inner img {
+    height: 300px; // reduz altura em telas pequenas
+  }
 
-#trabalhosCarousel .carousel-indicators button {
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background-color: #ccc;
-    border: none;
-}
+  .trabalhos .title {
+    font-size: 1.5rem; // títulos menores
+  }
 
-#trabalhosCarousel .carousel-indicators .active {
-    background-color: var.$color-primary;
-
+  .trabalhos p {
+    font-size: 0.9rem;
+  }
 }

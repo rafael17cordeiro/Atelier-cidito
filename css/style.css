@@ -29,7 +29,7 @@
 }
 
 ::selection {
-  background-color: #D9C3A0;
+  background-color: #d9c3a0;
 }
 
 ::-webkit-scrollbar {
@@ -41,7 +41,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #8B5E3C;
+  background-color: #8b5e3c;
   border-radius: 6px;
   border: 3px solid #ffffff;
 }
@@ -118,7 +118,7 @@ button {
 }
 
 .highlight {
-  color: #8B5E3C;
+  color: #8b5e3c;
   font-weight: 700;
 }
 
@@ -182,11 +182,11 @@ label {
 
 /* Links */
 a {
-  color: #8B5E3C;
+  color: #8b5e3c;
   transition: color 0.3s ease, transform 0.3s ease;
 }
 a:hover {
-  color: #D9C3A0;
+  color: #d9c3a0;
 }
 
 /* Lists */
@@ -208,17 +208,17 @@ b {
 /* Small text */
 small {
   font-size: 0.875rem;
-  color: rgb(253, 247, 241);
+  color: rgb(246, 245, 245);
 }
 
 /* Blockquotes */
 blockquote {
   font-family: "Poppins", sans-serif;
   font-size: 1.25rem;
-  color: rgb(253, 247, 241);
+  color: rgb(246, 245, 245);
   margin: 2rem 0;
   padding-left: 1rem;
-  border-left: 4px solid #8B5E3C;
+  border-left: 4px solid #8b5e3c;
 }
 
 .navbar {
@@ -240,45 +240,47 @@ blockquote {
 .navbar-brand span {
   font-family: "Poppins", sans-serif;
   font-size: 1.2rem;
-  color: #8B5E3C;
+  color: #8b5e3c;
 }
 
 .nav-link {
   color: #3a3a3a !important;
 }
 .nav-link:hover {
-  color: #8B5E3C !important;
+  color: #8b5e3c !important;
 }
 
 footer {
-  background-color: #8B5E3C;
+  background-color: #8b5e3c;
   /* cor do texto */
 }
 
 footer .text-muted {
-  color: rgb(253, 247, 241) !important;
+  color: rgb(246, 245, 245) !important;
 }
 
 .btn-form {
   border-radius: 20px;
   padding: 5px 20px 5px 20px;
-  background-color: #8B5E3C !important;
+  background-color: #8b5e3c !important;
   color: #ffffff !important;
 }
 
 .btn-form:hover {
-  background-color: #D9C3A0 !important;
+  background-color: #d9c3a0 !important;
   color: #ffffff !important;
 }
 
 .home-section {
-  position: relative;
   height: 100vh;
-  background: url("../../images/Nuno Palhinhas/12ª.jpg") center/cover no-repeat;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+  position: relative;
+}
+.home-section .carousel-item img {
+  object-fit: cover;
+  height: 100vh;
+}
+.home-section {
+  /* Overlay escuro por baixo dos botões */
 }
 .home-section .overlay {
   position: absolute;
@@ -289,16 +291,26 @@ footer .text-muted {
   background: rgba(0, 0, 0, 0.55);
   z-index: 1;
 }
+.home-section {
+  /* Texto e botões ficam acima do overlay */
+}
 .home-section .container {
   position: relative;
   z-index: 2;
 }
+.home-section {
+  /* Força os controlos do carrossel a ficarem acima de tudo */
+}
+.home-section .carousel-control-prev,
+.home-section .carousel-control-next {
+  z-index: 3;
+}
 .home-section .btn-successo {
-  background-color: #8B5E3C !important;
+  background-color: #8b5e3c !important;
   color: #ffffff !important;
 }
 .home-section .btn-successo:hover {
-  background-color: #D9C3A0 !important;
+  background-color: #d9c3a0 !important;
   color: #3a3a3a !important;
 }
 .home-section h1 {
@@ -312,7 +324,7 @@ footer .text-muted {
 }
 
 .services {
-  background-color: rgb(253, 247, 241) !important;
+  background-color: rgb(246, 245, 245) !important;
 }
 
 .title {
@@ -340,12 +352,12 @@ footer .text-muted {
 }
 
 .service i {
-  color: #8B5E3C;
+  color: #8b5e3c;
   transition: all 0.3s ease;
 }
 
 .service:hover i {
-  color: #8B5E3C;
+  color: #8b5e3c;
   transform: scale(1.1);
 }
 
@@ -369,7 +381,7 @@ footer .text-muted {
   left: 0;
   right: 0;
   height: 3px;
-  background: linear-gradient(90deg, #8B5E3C, #8B5E3C);
+  background: linear-gradient(90deg, #8b5e3c, #8b5e3c);
   transform: scaleX(0);
   transition: transform 0.3s ease;
 }
@@ -412,31 +424,68 @@ footer .text-muted {
   object-fit: cover;
 }
 
-.trabalhos {
-  height: 100vh;
-  background-color: rgb(253, 247, 241) !important;
+/* aplica sombra às imagens */
+.portfolio .carousel-inner img {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4), 0 10px 25px rgba(0, 0, 0, 0.4);
 }
 
+/* garante que o container não corta a sombra */
+.portfolio .carousel-inner {
+  overflow: visible;
+}
+
+.trabalhos {
+  background-color: rgb(246, 245, 245) !important;
+}
 .trabalhos .carousel-inner img {
+  width: 100%;
   height: 500px;
   object-fit: cover;
   border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
-#trabalhosCarousel .carousel-indicators {
+.trabalhos .carousel-inner img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.35);
+}
+.trabalhos #trabalhosCarousel .carousel-indicators {
   bottom: -30px;
 }
-
-#trabalhosCarousel .carousel-indicators button {
+.trabalhos #trabalhosCarousel .carousel-indicators button {
   width: 12px;
   height: 12px;
   border-radius: 50%;
   background-color: #ccc;
   border: none;
 }
+.trabalhos #trabalhosCarousel .carousel-indicators button.active {
+  background-color: #8b5e3c;
+}
 
-#trabalhosCarousel .carousel-indicators .active {
-  background-color: #8B5E3C;
+/* Responsivo */
+@media (max-width: 768px) {
+  .trabalhos .carousel-inner img {
+    height: 300px;
+  }
+  .trabalhos .title {
+    font-size: 1.5rem;
+  }
+  .trabalhos p {
+    font-size: 0.9rem;
+  }
+}
+.contact {
+  min-height: auto;
+  padding: 80px 20px;
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .contact {
+    padding: 100px 20px;
+    margin-top: 130px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

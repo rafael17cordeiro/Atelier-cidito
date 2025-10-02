@@ -1,0 +1,12 @@
+@use "../base/variables" as var;
+.contact {
+  min-height: auto;
+  padding: 80px 20px; // desktop
+  display: flex;
+  align-items: center;
+
+  @media (max-width: 768px) {
+    padding: 100px 20px;
+    margin-top: 130px; // aumenta o espaçamento em mobile
+  }
+}

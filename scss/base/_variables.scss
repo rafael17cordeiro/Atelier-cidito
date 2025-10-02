@@ -3,18 +3,16 @@
 ======================== */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
-
 /* Cores principais */
-$color-primary: #8B5E3C; // castanho médio (para destaques, botões)
-$color-secondary: #D9C3A0; // castanho claro (para hover, subtítulos)
+$color-primary: #8b5e3c; // castanho médio (para destaques, botões)
+$color-secondary: #d9c3a0;
+
 $color-light: #ffffff; // fundo principal
 $color-dark: #3a3a3a; // texto escuro
-$color-muted: rgb(253, 247, 241); // texto secundário / labels
+$color-muted: rgb(246, 245, 245); // texto secundário / labels
 
 /* Tipografia */
-$font-primary: "Poppins", sans-serif;
-; // corpo do site
-
+$font-primary: "Poppins", sans-serif; // corpo do site
 
 /* Tamanhos de fonte */
 $font-size-base: 16px;

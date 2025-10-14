@@ -1,0 +1,15 @@
+{
+  "folders": [
+	{
+		"name": "Atelier-cidito",
+		"path": "."
+	},
+	{
+		"name": "fotos cidito",
+		"path": "../fotos cidito"
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "Atelier-cidito"
+  }
+}

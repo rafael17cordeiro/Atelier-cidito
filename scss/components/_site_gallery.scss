@@ -1,0 +1,47 @@
+@use '../base/variables' as var;
+
+#galleryCarousel {
+    padding-bottom: 40px;
+}
+
+
+#galleryCarousel .carousel-indicators {
+    position: static;
+    margin-top: 1.5rem;
+}
+
+#galleryCarousel .carousel-indicators button {
+    background-color: #888;
+}
+
+#galleryCarousel .carousel-indicators .active {
+    background-color: #111;
+}
+
+#galleryCarousel .carousel-control-prev,
+#galleryCarousel .carousel-control-next {
+
+    top: 40%;
+    transform: translateY(-50%);
+
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    width: auto;
+}
+
+
+#galleryCarousel .carousel-control-prev {
+    left: -50px;
+}
+
+
+#galleryCarousel .carousel-control-next {
+    right: -50px;
+}
+
+
+#galleryCarousel .carousel-control-prev-icon,
+#galleryCarousel .carousel-control-next-icon {
+    filter: invert(1);
+}
